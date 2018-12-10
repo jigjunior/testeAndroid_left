@@ -1,10 +1,8 @@
-package com.avanade.santander.testeandroid.contato;
+package com.avanade.santander.testeandroid.contato.domain.model;
 
-import com.google.gson.Gson;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Formulario {

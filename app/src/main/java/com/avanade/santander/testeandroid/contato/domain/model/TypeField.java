@@ -1,4 +1,4 @@
-package com.avanade.santander.testeandroid;
+package com.avanade.santander.testeandroid.contato.domain.model;
 
 /**
  * Enum responsavel por identificar o tipo de máscara deve ser usada para validar o campo

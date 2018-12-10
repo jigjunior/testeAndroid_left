@@ -2,6 +2,7 @@ package com.avanade.santander.testeandroid.contato;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
@@ -21,12 +22,15 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.avanade.santander.testeandroid.MailUtil;
-import com.avanade.santander.testeandroid.MaskEditUtil;
-import com.avanade.santander.testeandroid.PixelToDensity;
+import com.avanade.santander.testeandroid.contato.domain.model.Cell;
+import com.avanade.santander.testeandroid.contato.domain.model.Formulario;
+import com.avanade.santander.testeandroid.fundos.FundosActivity;
+import com.avanade.santander.testeandroid.util.MailUtil;
+import com.avanade.santander.testeandroid.util.MaskEditUtil;
+import com.avanade.santander.testeandroid.util.PixelToDensity;
 import com.avanade.santander.testeandroid.R;
-import com.avanade.santander.testeandroid.Type;
-import com.avanade.santander.testeandroid.TypeField;
+import com.avanade.santander.testeandroid.contato.domain.model.Type;
+import com.avanade.santander.testeandroid.contato.domain.model.TypeField;
 import com.avanade.santander.testeandroid.data.APIRetrofitService;
 import com.avanade.santander.testeandroid.data.ApiClient;
 
@@ -41,6 +45,7 @@ public class ContatoActivity extends Activity {
     private ConstraintLayout layout;
     private ConstraintLayout layoutEnvio;
     private ProgressBar progressBar;
+    private Button btnInvestimentos;
 
 
     @Override
@@ -51,6 +56,9 @@ public class ContatoActivity extends Activity {
         layoutEnvio = findViewById(R.id.layout_envio);
         layout = findViewById(R.id.layout_formulario);
         progressBar = findViewById(R.id.progress_bar);
+        btnInvestimentos = findViewById(R.id.btn_investimento);
+
+        btnInvestimentos.setOnClickListener(v -> startActivity(new Intent(this, FundosActivity.class)));
 
         carregaTela();
     }

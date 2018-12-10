@@ -5,40 +5,13 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
-import android.graphics.PorterDuff;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
-import android.support.constraint.ConstraintSet;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.res.ResourcesCompat;
-import android.text.InputFilter;
-import android.text.InputType;
 import android.util.Log;
-import android.util.TypedValue;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 
-import com.avanade.santander.testeandroid.contato.Cell;
 import com.avanade.santander.testeandroid.contato.ContatoActivity;
-import com.avanade.santander.testeandroid.contato.Formulario;
-import com.avanade.santander.testeandroid.data.APIRetrofitService;
-import com.avanade.santander.testeandroid.data.ApiClient;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import com.avanade.santander.testeandroid.fundos.FundosActivity;
 
 public class MainActivity extends Activity {
 
@@ -69,7 +42,8 @@ public class MainActivity extends Activity {
             }
         } else {
             Log.i(TAG, "Permissão de Internet" + " ----------- OK - GRANTED ");
-            startActivity(new Intent(this, ContatoActivity.class));
+            //startActivity(new Intent(this, ContatoActivity.class));
+            startActivity(new Intent(this, FundosActivity.class));
         }
     }
 

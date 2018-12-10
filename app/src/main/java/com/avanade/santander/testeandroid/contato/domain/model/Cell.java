@@ -1,4 +1,4 @@
-package com.avanade.santander.testeandroid.contato;
+package com.avanade.santander.testeandroid.contato.domain.model;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;

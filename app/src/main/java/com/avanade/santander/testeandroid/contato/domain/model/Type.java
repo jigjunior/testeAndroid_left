@@ -1,4 +1,4 @@
-package com.avanade.santander.testeandroid;
+package com.avanade.santander.testeandroid.contato.domain.model;
 
 /**
  * Enum responsável por identificar o tipo de campos deverá ser usado

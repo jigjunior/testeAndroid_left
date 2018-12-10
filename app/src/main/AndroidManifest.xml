@@ -24,7 +24,7 @@
 
         <activity android:name=".contato.ContatoActivity"/>
 
-        <activity android:name=".fundo.Fundos" />
+        <activity android:name=".fundos.FundosActivity" />
     </application>
 
 </manifest>

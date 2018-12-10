@@ -1,4 +1,4 @@
-package com.avanade.santander.testeandroid;
+package com.avanade.santander.testeandroid.util;
 
 import android.content.Context;
 import android.util.TypedValue;

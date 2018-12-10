@@ -1,9 +1,5 @@
 package com.avanade.santander.testeandroid.data;
 
-import com.avanade.santander.testeandroid.contato.Cell;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 

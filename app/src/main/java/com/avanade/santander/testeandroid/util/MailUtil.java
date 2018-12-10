@@ -1,4 +1,4 @@
-package com.avanade.santander.testeandroid;
+package com.avanade.santander.testeandroid.util;
 
 import android.graphics.Color;
 import android.graphics.PorterDuff;
